@@ -2,7 +2,7 @@
 ---
 I'm a DevOps, specialized in Symfony and Vue.js. Aside, I love to work with low-level languages like C/C++, and experiment with neural networks :brain: with Python and Tensorflow.
 
-✨ I recentely started contributing to [Symfony](https://github.com/symfony/symony) and can't stop doing it. Think of me when you'll be using PHP 8.1 enumerations with the framework!
+✨ I recentely started contributing to [Symfony](https://github.com/symfony/symfony) and can't stop doing it. Think of me when you'll be using PHP 8.1 enumerations with the framework!
 
 Pushing the framework forward for millions of developpers (and the tool I use everyday) is something I love to do without counting hours.
 
