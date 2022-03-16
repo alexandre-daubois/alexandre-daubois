@@ -43,7 +43,7 @@ final class AlexDaubois implements DeveloperInterface extends AbstractSymfonyDev
     
     public function getCertificationLabel(): ?string
     {
-        return $this->isCertified ? 'Symfony 6 Certified Developer (Expert)' : null;
+        return $this->isCertified() ? 'Symfony 6 Certified Developer (Expert)' : null;
     }
 }
 ```
