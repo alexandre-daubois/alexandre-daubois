@@ -6,7 +6,6 @@ class AlexDaubois implements SymfonyDeveloperInterface
     public const FIRST_NAME = 'Alexandre';
     public const LAST_NAME = 'Daubois';
     
-
     public function __construct(
         private \DateTimeImmutable $birthDate = new \DateTimeImmutable('1996-01-07T05:30:00+0200'),
         private string $currentCompany = 'SensioLabs',
