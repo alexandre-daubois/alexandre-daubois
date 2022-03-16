@@ -1,6 +1,11 @@
 ### [Hi there!](https://twitter.com/alexdaubois/) 👋
 
 ```php
+<?php
+
+namespace App\Developer;
+
+#[AsDeveloper]
 class AlexDaubois implements SymfonyDeveloperInterface
 {
     public const FIRST_NAME = 'Alexandre';
