@@ -6,8 +6,11 @@
 namespace App\Developer;
 
 #[AsDeveloper]
-class AlexDaubois implements SymfonyDeveloperInterface
+class AlexDaubois implements DeveloperInterface extends AbstractSymfonyDeveloper
 {
+    use TwigTrait;
+    use OpsTrait;
+
     public const FIRST_NAME = 'Alexandre';
     public const LAST_NAME = 'Daubois';
     
