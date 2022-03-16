@@ -6,18 +6,10 @@ class AlexDaubois implements SymfonyDeveloperInterface
     public function __construct(
         private string $firstName = 'Alexandre',
         private string $lastName = 'Daubois',
-        private \DateTime $birthDate = new \DateTime('1996-01-07T05:30:00+0200')
+        private \DateTime $birthDate = new \DateTime('1996-01-07T05:30:00+0200'),
+        private string $currentCompany = 'SensioLabs',
+        private string $currentCity = 'Lyon, France'
     ) {
-    }
-    
-    public function getCurrentCompany(): string
-    {
-        return 'SensioLabs';
-    }
-    
-    public function getCurrentCity(): string
-    {
-        return 'Lyon, France';
     }
     
     public function isCertified(): bool
