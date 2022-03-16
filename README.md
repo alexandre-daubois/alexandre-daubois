@@ -3,23 +3,15 @@
 ```php
 class AlexDaubois implements SymfonyDeveloperInterface
 {
+    public const FIRST_NAME = 'Alexandre';
+    public const LAST_NAME = 'Daubois';
+    
+
     public function __construct(
-        private string $firstName = 'Alexandre',
-        private string $lastName = 'Daubois',
-        private \DateTime $birthDate = new \DateTime('1996-01-07T05:30:00+0200'),
+        private \DateTimeImmutable $birthDate = new \DateTimeImmutable('1996-01-07T05:30:00+0200'),
         private string $currentCompany = 'SensioLabs',
         private string $currentCity = 'Lyon, France'
     ) {
-    }
-    
-    public function isCertified(): bool
-    {
-        return true;
-    }
-    
-    public function getCertificationLabel(): string
-    {
-        return 'Symfony 6 Certified Developer (Expert)';
     }
     
     public function getBlog(): ?SocialAccountInterface
@@ -35,6 +27,16 @@ class AlexDaubois implements SymfonyDeveloperInterface
     public function getAdditionalLinks(): \Generator
     {
         yield 'https://amv.gallery';
+    }
+    
+    public function isCertified(): bool
+    {
+        return true;
+    }
+    
+    public function getCertificationLabel(): string
+    {
+        return 'Symfony 6 Certified Developer (Expert)';
     }
 }
 ```
