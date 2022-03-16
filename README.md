@@ -6,7 +6,7 @@
 namespace App\Developer;
 
 #[AsHuman]
-class AlexDaubois implements DeveloperInterface extends AbstractSymfonyDeveloper
+final class AlexDaubois implements DeveloperInterface extends AbstractSymfonyDeveloper
 {
     use TwigTrait;
     use OpsTrait;
@@ -41,9 +41,9 @@ class AlexDaubois implements DeveloperInterface extends AbstractSymfonyDeveloper
         return true;
     }
     
-    public function getCertificationLabel(): string
+    public function getCertificationLabel(): ?string
     {
-        return 'Symfony 6 Certified Developer (Expert)';
+        return $this->isCertified ? 'Symfony 6 Certified Developer (Expert)' : null;
     }
 }
 ```
