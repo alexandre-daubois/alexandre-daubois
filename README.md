@@ -6,7 +6,7 @@
 namespace App\Developer;
 
 #[AsHuman]
-final class AlexDaubois implements DeveloperInterface extends AbstractSymfonyDeveloper
+final class AlexDaubois extends AbstractSymfonyDeveloper implements DeveloperInterface
 {
     use TwigTrait;
     use OpsTrait;
