@@ -28,12 +28,7 @@ final class AlexDaubois extends AbstractSymfonyDeveloper implements DeveloperInt
     
     public function getTwitter(): ?SocialAccountInterface
     {
-        return new TwitterAccount('https://alex-daubois.medium.com/');
-    }
-    
-    public function getAdditionalLinks(): \Generator
-    {
-        yield 'https://amv.gallery';
+        return new TwitterAccount('https://twitter.com/alexdaubois');
     }
     
     public function isCertified(): bool
