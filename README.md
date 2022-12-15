@@ -6,7 +6,7 @@
 namespace App\Developer;
 
 #[AsHuman]
-final class AlexDaubois extends AbstractSymfonyDeveloper implements DeveloperInterface
+final class AlexDaubois extends AbstractSymfonyLeadSensioLabsDeveloper implements DeveloperInterface
 {
     use TwigTrait;
     use OpsTrait;
@@ -16,7 +16,7 @@ final class AlexDaubois extends AbstractSymfonyDeveloper implements DeveloperInt
     
     public function __construct(
         private \DateTimeImmutable $birthDate = new \DateTimeImmutable('1996-01-07T05:30:00+0200'),
-        private string $currentCompany = 'SensioLabs',
+        private string $currentCompany = 'Wanadev',
         private string $currentCity = 'Lyon, France'
     ) {
     }
