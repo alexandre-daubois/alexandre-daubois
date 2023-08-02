@@ -1,5 +1,3 @@
-### [Hi there!](https://twitter.com/alexdaubois/) 👋
-
 ```php
 <?php
 
@@ -8,14 +6,11 @@ namespace App\Developer;
 #[AsHuman]
 final class AlexDaubois extends AbstractSymfonyLeadDeveloper implements DeveloperInterface
 {
-    use TwigTrait;
-    use OpsTrait;
-
-    public const FIRST_NAME = 'Alexandre';
-    public const LAST_NAME = 'Daubois';
+    public const string FIRST_NAME = 'Alexandre';
+    public const string LAST_NAME = 'Daubois';
     
     public function __construct(
-        private \DateTimeImmutable $birthDate = new \DateTimeImmutable('1996-01-07T05:30:00+0200'),
+        #[\SensitiveParameter] private \DateTimeImmutable $birthDate = new \DateTimeImmutable('1996-01-07T05:30:00+0200'),
         private string $currentCompany = 'Wanadev',
         private string $currentCity = 'Lyon, France'
     ) {
@@ -26,9 +21,9 @@ final class AlexDaubois extends AbstractSymfonyLeadDeveloper implements Develope
         return new MediumPage('https://alex-daubois.medium.com/');
     }
     
-    public function getTwitter(): ?SocialAccountInterface
+    public function getX(): ?SocialAccountInterface
     {
-        return new TwitterAccount('https://twitter.com/alexdaubois');
+        return new TwitterAccount('https://x.com/alexdaubois');
     }
     
     public function isCertified(): bool
