@@ -3,6 +3,9 @@
 
 namespace App\Developer;
 
+/**
+ * @requires PHP 8.3
+ */
 #[AsHuman]
 final class AlexDaubois extends AbstractSymfonyLeadDeveloper implements DeveloperInterface
 {
@@ -23,7 +26,7 @@ final class AlexDaubois extends AbstractSymfonyLeadDeveloper implements Develope
     
     public function getX(): ?SocialAccountInterface
     {
-        return new TwitterAccount('https://x.com/alexdaubois');
+        return new XAccount('https://x.com/alexdaubois');
     }
     
     public function isCertified(): bool
